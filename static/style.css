@@ -1,0 +1,30 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top{
+    text-align: center;
+    border-bottom: black 2px solid;
+}
+
+.container{
+    margin-top: 7px;
+}
+
+.container form textarea{
+    height: 75vh;
+    width:50%;
+    resize: none;
+}
+
+form textarea::placeholder{
+    text-align: center;
+    color:red;
+    align-items: center;
+    font-size: 40px;
+}
+
+.container form input{
+    height:10px;
+    width:10px;
+}
