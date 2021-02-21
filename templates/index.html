@@ -12,13 +12,27 @@
         <h1>Fake News Detector</h1>
     </div>
     <div class="container">
+        <div class="first">
         <form action="/submit" method="post">
-            <textarea id="news" placeholder="Your news here"></textarea>
+            <textarea id="news" name="mynews" placeholder="Paste Your News Here ...."></textarea>
         </br>
-        <input type="submit">
+        <input type="submit" value="Submit"width="200",height="150">
+        </form>
+        </div>  
             
-            
+        <div class="meme">
+            <img src="{{source}}">
+            <h1>{{answer}}</h1>
+        </div>
         
     </div>
+    <footer>
+        <div>
+            <p>The Word count of 1000 is recommended. It will truncated if the word is greater than 1000</p>
+        </div>
+    </footer>
+
+   
+    <script src="{{url_for('static',filename="js/app")}}"></script>
 </body>
 </html>
